@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentKart - Pay Your TNEB Bill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CurrentKart</h1>
+            <p>Simple and Secure EB Bill Payments for Tamil Nadu</p>
+        </header>
+
+        <main>
+            <div id="bill-lookup">
+                <h2>Check Your Bill</h2>
+                <form id="bill-form">
+                    <input type="text" id="consumer-id" placeholder="Enter Your TNEB Consumer ID" required>
+                    <button type="submit" id="fetch-bill-btn">Get Bill Details</button>
+                </form>
+            </div>
+
+            <div id="bill-details" class="hidden">
+                <h3>Your Bill Information</h3>
+                <p><strong>Consumer ID:</strong> <span id="display-consumer-id"></span></p>
+                <p><strong>Units Consumed:</strong> <span id="display-units"></span></p>
+                <p><strong>Amount Due:</strong> ₹<span id="display-amount"></span></p>
+                <p><strong>Due Date:</strong> <span id="display-due-date"></span></p>
+                <button id="pay-now-btn">Pay Now with Razorpay</button>
+            </div>
+
+            <div id="payment-status" class="hidden"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 CurrentKart. A secure payment platform.</p>
+        </footer>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

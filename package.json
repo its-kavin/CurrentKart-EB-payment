@@ -1,0 +1,26 @@
+{
+  "name": "currentkart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/its-kavin/CurrentKart-EB-payment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/its-kavin/CurrentKart-EB-payment/issues"
+  },
+  "homepage": "https://github.com/its-kavin/CurrentKart-EB-payment#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "razorpay": "^2.9.6"
+  }
+}
